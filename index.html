@@ -1,0 +1,46 @@
+---
+layout: default
+title: Lab Cookies
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab Cookies</title>
+
+    <script>
+        function setCookies() {
+            document.cookie = "username=Ilea";
+            document.cookie = "theme=dark";
+            alert("Cookies set!");
+        }
+
+        function getCookies() {
+            alert(document.cookie);
+        }
+
+        function updateCookie() {
+            document.cookie = "username=UpdatedUser";
+            alert("Cookie updated!");
+        }
+
+        function deleteCookie() {
+            document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC;";
+            alert("Cookie deleted!");
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1>Lab Cookies</h1>
+
+    <p>Exercitiul 4 & 5 - Cookies</p>
+
+    <button onclick="setCookies()">Set Cookies</button>
+    <button onclick="getCookies()">Show Cookies</button>
+    <button onclick="updateCookie()">Update Cookie</button>
+    <button onclick="deleteCookie()">Delete Cookie</button>
+
+</body>
+</html>
