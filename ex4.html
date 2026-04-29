@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercitiul 4</title>
+
+    <script>
+        document.cookie = "session=test GDPR";
+        document.cookie = "favorite_task=collect Data";
+
+        function alertCookie() {
+            alert(document.cookie);
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1>Exercitiul 4</h1>
+
+    <p>Afisare cookies:</p>
+
+    <button onclick="alertCookie()">
+        Show Cookies
+    </button>
+
+</body>
+</html>
